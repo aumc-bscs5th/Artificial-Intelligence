@@ -20,7 +20,7 @@ def posTagging(words):
 
 fileName = raw_input('Enter the file name: ')
 
-# -------------Read File-------------
+# Step-1-------Read File-------------
 print '---------------------------------------------------'
 print 'Paragraph'
 print '---------------------------------------------------'
@@ -28,21 +28,21 @@ paragraph = readFile(fileName)
 print paragraph
 
 
-# Step-1--------Tokenization---------
+# Step-2--------Tokenization---------
 sents, words = tokenization(paragraph)
 
 
-# Step-2--------POS Tagging---------
+# Step-3--------POS Tagging---------
 posWords = posTagging(words)
 
-# Step-3--------Printing POS--------
+# Step-4--------Printing POS--------
 print '\n---------------------------------------------------'
 print 'Part of Speech'
 print '---------------------------------------------------'
 print posWords
 
 
-# Step-4--------Printing Nouns--------
+# Step-5--------Printing Nouns--------
 print '\n---------------------------------------------------'
 print 'Print Nouns'
 print '---------------------------------------------------'
@@ -52,7 +52,7 @@ for posWord in posWords:
             print x[0] + '=> NOUN'
     print '\n'
 
-# Step-5--------Replace Nouns with '____'--------
+# Step-6--------Replace Nouns with '____'--------
 i = 0
 fillSents = sents
 answers = []
@@ -63,7 +63,7 @@ for posWord in posWords:
             answers.append(x[0])
     i = i + 1
 
-# Step-6--------Printing Fill in the blanks--------
+# Step-7--------Printing Fill in the blanks--------
 print '---------------------------------------------------'
 print 'Fill in the blanks'
 print '---------------------------------------------------'
