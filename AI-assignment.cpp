@@ -15,8 +15,8 @@ int main()
 	int c=0;
 	int b=0;
 	string para[size]={"Sunset ", "is ", "the ", "time " ,"of " ,"day " ,"when " ,"our " ,"sky " ,"meets ", "the " ,"outer " ,"space ", "solar " ,"winds. " ,"There ",
-	 					"are ", "blue, " ,"pink, ", "and " ,"purple " ,"swirls, " ,"spinning ", "and ", "twisting, ", "like ", "clouds ", "of " ,"balloons ", "caught ", 
-						"in " ,"a " ,"blender. "," "};
+	 					"are ", "blue, " ,"pink, ", "and " ,"purple " ,"swirls, " ,"spinning ", "and ", "twisting, ", "like ", "clouds of ", "balloons" ,"caught ", "inc ", 
+						"a " ,"blender "," "};
 	/////Setting menu
 	Menu:
 	int choice=0;
